@@ -14,7 +14,7 @@ gcloud compute networks create $SERVICES_NETWORK \
 gcloud beta compute networks subnets create $PRODUCT_SUBNET \
     --project=$PROJECT_NAME \
     --network=$SERVICES_NETWORK \
-    --region=us-central1 \
+    --region=$PROJECT_REGION \
     --range=10.29.0.0/24 \
     --enable-private-ip-google-access \
     --enable-flow-logs
@@ -22,7 +22,7 @@ gcloud beta compute networks subnets create $PRODUCT_SUBNET \
 gcloud beta compute networks subnets create $ADS_SUBNET \
     --project=$PROJECT_NAME \
     --network=$SERVICES_NETWORK \
-    --region=us-central1 \
+    --region=$PROJECT_REGION \
     --range=10.28.0.0/24 \
     --enable-private-ip-google-access \
     --enable-flow-logs
