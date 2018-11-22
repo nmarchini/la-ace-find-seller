@@ -1,17 +1,17 @@
 #!/bin/bash
 
 # The name of the project to deploy services into.
-PROJECT_NAME="ace-demo-2"
+PROJECT_NAME="associate-training"
 
 # Which default region should regional services use?
-PROJECT_REGION="us-central1"
+PROJECT_REGION="europe-west4"
 
 # Which App Engine Region?
 # gcloud app regions list
-APP_ENGINE_REGION="us-central"
+APP_ENGINE_REGION="europe-west4"
 
 # Which default zone should zonal service use?
-PROJECT_ZONE="us-central1-b"
+PROJECT_ZONE="europe-west4"
 
 # Used as a suffix for select service names.
 ENV_TYPE="dev"
@@ -19,13 +19,13 @@ ENV_TYPE="dev"
 # Used as a prefix for select service names.
 ORGANIZATION="find-seller"
 
-# This is the Storage bucket used for public assets. 
+# This is the Storage bucket used for public assets.
 # The entire bucket is public by default
-PUBLIC_ASSETS="fs2-public-bucket"
+PUBLIC_ASSETS="associate-training-nam76-fs2-public-bucket"
 
-# This is the Storage bucket used for private assets. 
+# This is the Storage bucket used for private assets.
 # The entire bucket is private by default
-PRIVATE_ASSETS="fs2-private-bucket"
+PRIVATE_ASSETS="associate-training-nam76-fs2-private-bucket"
 
 # The name of the Pubsub topic to create / use
 PUB_SUB_TOPIC="fs2-items"
