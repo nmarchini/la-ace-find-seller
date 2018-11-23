@@ -4,14 +4,14 @@
 PROJECT_NAME="associate-training"
 
 # Which default region should regional services use?
-PROJECT_REGION="europe-west4"
+PROJECT_REGION="europe-west2"
 
 # Which App Engine Region?
 # gcloud app regions list
-APP_ENGINE_REGION="europe-west4"
+APP_ENGINE_REGION="europe-west2"
 
 # Which default zone should zonal service use?
-PROJECT_ZONE="europe-west4-a"
+PROJECT_ZONE="europe-west2-a"
 
 # Used as a suffix for select service names.
 ENV_TYPE="dev"
