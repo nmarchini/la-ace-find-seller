@@ -28,7 +28,7 @@ PUBLIC_ASSETS="associate-training-nam76-fs2-public-bucket"
 PRIVATE_ASSETS="associate-training-nam76-fs2-private-bucket"
 
 # The name of the Pubsub topic to create / use
-PUB_SUB_TOPIC="fs2-items"
+PUB_SUB_TOPIC="fs2-items2"
 
 # The name of the custom network for the product and ads services
 SERVICES_NETWORK="fs2-app-network"
