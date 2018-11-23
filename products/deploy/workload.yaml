@@ -10,9 +10,9 @@ data:
   # The path /sa comes from the volume mounted in the container.
   # It mounts the secret to that path.
   # The secret is created in the deploy.sh file for this service
-  SERVICE_ACCOUNT_FILE_NAME: "/sa/service_account.json" 
-  PROJECT_ID: "ace-demo-2"
-  PRODUCT_CACHE_BUCKET: "fs2-public-bucket"
+  SERVICE_ACCOUNT_FILE_NAME: "/sa/service_account.json"
+  PROJECT_ID: "associate-training"
+  PRODUCT_CACHE_BUCKET: "associate-training-nam76-fs2-public-bucket"
 ---
 apiVersion: "extensions/v1beta1"
 kind: "Deployment"
@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: "products"
-        image: "gcr.io/ace-demo-2/products:latest"
+        image: "gcr.io/associate-training/products:latest"
         volumeMounts:
         - name: service-account
           mountPath: "/sa/"
@@ -56,7 +56,7 @@ spec:
               name: "products-service-config"
       volumes:
       - name: service-account
-        secret: 
+        secret:
             secretName: service-account-file
 ---
 apiVersion: "autoscaling/v1"
