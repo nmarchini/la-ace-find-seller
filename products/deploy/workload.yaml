@@ -22,7 +22,7 @@ metadata:
   labels:
     app: "products-service"
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: "products-service"
@@ -72,5 +72,5 @@ spec:
     name: "products-service"
     apiVersion: "apps/v1beta1"
   minReplicas: 1
-  maxReplicas: 5
+  maxReplicas: 3
   targetCPUUtilizationPercentage: 80
