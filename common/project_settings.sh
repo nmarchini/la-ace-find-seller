@@ -4,11 +4,11 @@
 PROJECT_NAME="associate-training"
 
 # Which default region should regional services use?
-PROJECT_REGION="us-central1"
+PROJECT_REGION="us-central"
 
 # Which App Engine Region?
 # gcloud app regions list
-APP_ENGINE_REGION="us-central1"
+APP_ENGINE_REGION="us-central"
 
 # Which default zone should zonal service use?
 PROJECT_ZONE="us-central1-b"
